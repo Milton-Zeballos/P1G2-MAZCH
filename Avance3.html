@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Avance 4 - UPC</h2>
+<p>Hola Mundo</p>
+<button onclick="myTercerAlgoritmo_VERSION_2()">boton en HTML</button>
+
+<script>
+function myCuartoAlgoritmo(){
+    var nro = 1
+    while(nro <= 2464548){
+        if(nro == 651){
+            alert("encontro el nro: " + nro)
+        }
+        if(nro == 7085){
+            alert("encontro el nro: " + nro)
+        }
+        nro = nro + 1
+    }
+    alert("FIN")
+}
+
+
+function existeA(nombre) {
+        if (nombre.includes("a")) {
+        return true
+    }else{
+        return false
+    }
+}
+
+function existeE(nombre) {
+        if (nombre.includes("e")) {
+        return true
+    }else{
+        return false
+    }
+}
+
+function existeI(nombre) {
+        if (nombre.includes("i")) {
+        return true
+    }else{
+        return false
+    }
+}
+
+function existeO(nombre) {
+        if (nombre.includes("o")) {
+        return true
+    }else{
+        return false
+    }
+}
+
+function existeU(nombre) {
+        if (nombre.includes("u")) {
+        return true
+    }else{
+        return false
+    }
+}
+
+function myTercerAlgoritmo_VERSION_2() {
+  var nombre = "Milton"
+
+if (existeA(nombre)) {
+    alert(nombre + " Existe la vocal (A)")
+}else{
+    if (existeE(nombre)) {
+        alert(nombre + " Existe la vocal (E)")
+    }else{
+        if (existeI(nombre)) {
+            alert(nombre + " Existe la vocal (i)")
+        }else{
+            if (existeO(nombre)) {
+                alert(nombre + " Existe la vocal (o)")
+            }else{
+                if (existeU(nombre)) {
+                    alert(nombre + " Existe la vocal (u)")
+                }else{
+                    alert("No existe la vocal (A, E , i, o, u)")
+                }
+            }
+        }
+    }
+  }
+}
+
+function myTercerAlgoritmo() {
+  var nombre = "Milton"
+
+if (nombre.includes("a")) {
+    alert(nombre + " Existe la vocal (A)")
+}else{
+    if (nombre.includes("e")) {
+        alert(nombre + " Existe la vocal (E)")
+    }else{
+        if (nombre.includes("i")) {
+            alert(nombre + " Existe la vocal (i)")
+        }else{
+            if (nombre.includes("o")) {
+                alert(nombre + " Existe la vocal (o)")
+            }else{
+                if (nombre.includes("u")) {
+                    alert(nombre + " Existe la vocal (u)")
+                }else{
+                    alert("No existe la vocal (A, E , i, o, u)")
+                }
+            }
+        }
+    }
+  }
+}
+
+</script>
+</body>
+</html>
