@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Avance 4 - UPC</h2>
+<p>Hola Mundo</p>
+<button onclick="SumarParesDeUnNumero()">boton en HTML</button>
+<script>
+
+//Mostrar la suma de los numeros de un numero dado
+//1,2,3,4,5,6,7,8,9,10,11,12
+// 12(numero) => 2 + 4 + 6 + 8 + 10 + 12 =
+function SumarParesDeUnNumero(){
+    var numero = 7
+    var i = 1
+    var resultado = 0
+    while(i <= numero){
+        if(i % 2 == 0){
+            //Es par
+            resultado = resultado + i
+        }else{
+            //Es Impar
+        }
+        i = i + 1
+    }
+    alert(resultado)
+}
+
+//Sumar todos los numeros de un numero dado
+// 7 (numero) => 1(i) + 2(i) + 3(i) + 4(i) + 5(i) + 6(i) + 7(i) = 28 (resultado)
+function mySeptimoAlgoritmo(){
+    var numero = 7
+    var i = 1
+    var resultado = 0
+    while( i <= numero){
+        resultado = resultado + i
+        i = i + 1
+    }
+    alert(resultado)
+}
+
+//Mostrar todos los numeros par que contienen un numero
+function mySextoAlgoritmo(){
+    var numero = 19
+    var i = 1
+    while(i < numero){
+        if (i % 2 == 0){
+            alert(i + " Es Par")
+        }else{
+            //no hace nada
+        }
+        i = i + 1
+    }
+}
+
+
+//Verificar si un numero es par o impar
+function myQuintoAlgoritmo(){
+    var numero = 16
+    if (numero % 2 == 0){
+        alert(numero + " Es Par")
+    }else{
+        alert(numero + "Es Impar")
+    }
+
+}
+</script>
+</body>
+</html>
