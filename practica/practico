@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos123.css">
+    <title>Practico Programacion</title>
+</head>
+<body>
+<h1 class="letra_azul">Milton Aurelio Zeballos Chore</h1>
+<hr>
+<p>1.- Mostrar los numeros impares de N</p>
+<p>Ejemplo: 14 -> 1,3,5,7,9,11,13</p>
+<button onclick="EjercicioUno()">EjercicioUno</button>
+<p>2.- Desarrollar un diagrama de flujo donde se ingrese
+    dos numeros y te muestre cual es el numero mayor</p>
+<p>Ejemplo: A=10, B=7, "El mayor es 10"</p>
+<button onclick="EjercicioDos()">EjercicioDos</button>
+<p>6.- Desarrollar un diagrama de flujo donde se ingrese
+    tres numeros y te muestre cual es el numero mayor</p>
+<button onclick="EjercicioSeis()">EjercicioSeis</button>
+<p>5.- Area y Volumen de un cilindro</p>
+<button onclick="AreaVolumenCilindro()">AreaVolumenCilindro</button>
+<script>
+//Codigo de programacion - INICIO
+function EjercicioUno(){
+    var nro = 14
+    var i = 1
+    while(i < nro){
+        if(i % 2 == 0){
+        }else{
+            alert(i)
+        }
+        i = i + 1
+    }
+    alert("FIN")
+}
+
+function EjercicioDos(){
+    var A = 10
+    var B = 7
+    if(A>B){
+        alert("El mayor de " +A+ " y " +B+ " es " +A)
+    }else{
+        alert("El mayor de " +A+ " y " +B+ " es " +B)
+    }
+}
+
+function EjercicioSeis(){
+    var A = 5
+    var B = 4
+    var C = 9
+    if(A>B){
+        if(A>C){
+            alert("El mayor de " +A+","+B+","+C+ " es " +A)
+        }else{
+            alert("El mayor de " +A+","+B+","+C+ " es " +C)
+        }
+    }else{
+        if(b>c){
+            alert("El mayor de " +A+","+B+","+C+ " es " +B)
+        }else{
+            alert("El mayor de " +A+","+B+","+C+ " es " +C)
+        }
+    }
+}
+function AreaVolumenCilindro(){
+    var R = 5
+    var H = 12
+    var A = 0
+    var V = 0
+    var pi = 3.1416
+    A = (2*pi*R*H)+(2*pi*(R*R))
+    V = pi*(R*R)*H
+    alert("El area es " + A)
+    alert("El volumen es " + V)
+}
+//Codigo de programacion - Fin
+</script>
+</body>
+</html>
